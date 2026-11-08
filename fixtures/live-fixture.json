@@ -1,0 +1,789 @@
+[
+  {
+    "type": "status",
+    "message": "The chair is reviewing your question and attachments. Arguments will appear as they are generated."
+  },
+  {
+    "type": "council",
+    "options": [
+      "Saturday morning",
+      "Sunday afternoon"
+    ],
+    "jurors": [
+      {
+        "name": "Avery Chen",
+        "role": "Chair",
+        "initial": "Sunday afternoon",
+        "priorities": "Maximize attendance first, then keep logistics simple and within constraints.",
+        "blind_spots": "May overvalue a clear majority and underweight minority scheduling burden."
+      },
+      {
+        "name": "Mira Patel",
+        "role": "Attendance Analyst",
+        "initial": "Sunday afternoon",
+        "priorities": "Chooses the option with the highest member availability.",
+        "blind_spots": "Can treat attendance as the only deciding factor and ignore edge convenience issues."
+      },
+      {
+        "name": "Jonas Reed",
+        "role": "Convenience Planner",
+        "initial": "Sunday afternoon",
+        "priorities": "Prefers the least disruptive option that still satisfies the stated criteria.",
+        "blind_spots": "May underestimate how strongly attendance should dominate when explicitly prioritized."
+      },
+      {
+        "name": "Elena Torres",
+        "role": "Scheduling Pragmatist",
+        "initial": "Sunday afternoon",
+        "priorities": "Looks for the option that best fits shared constraints and avoids extra coordination.",
+        "blind_spots": "Can default to the most flexible-looking choice without testing tradeoffs carefully."
+      },
+      {
+        "name": "Dante Okafor",
+        "role": "Minority Advocate",
+        "initial": "Saturday morning",
+        "priorities": "Checks whether a smaller group could still be acceptable if convenience were much better.",
+        "blind_spots": "May overprotect the minority option even when the prompt explicitly prioritizes attendance."
+      },
+      {
+        "name": "Priya Sato",
+        "role": "Risk Reviewer",
+        "initial": "Sunday afternoon",
+        "priorities": "Flags constraint violations and any hidden scheduling risks.",
+        "blind_spots": "Can be conservative and reluctant to discard alternatives too quickly."
+      },
+      {
+        "name": "Noah Kim",
+        "role": "Constraint Auditor",
+        "initial": "Sunday afternoon",
+        "priorities": "Verifies the decision stays inside the stated constraints, including no paid venue.",
+        "blind_spots": "May focus narrowly on rule compliance and miss softer practical considerations."
+      },
+      {
+        "name": "Lina Morales",
+        "role": "Group Dynamics Lead",
+        "initial": "Sunday afternoon",
+        "priorities": "Keeps the meeting inclusive and minimizes avoidable exclusion.",
+        "blind_spots": "May overemphasize fairness language when the question asks for a practical choice."
+      },
+      {
+        "name": "Owen Brooks",
+        "role": "Skeptic",
+        "initial": "Saturday morning",
+        "priorities": "Challenges unsupported assumptions and tests whether the evidence actually settles the question.",
+        "blind_spots": "Can overcomplicate a straightforward attendance comparison."
+      },
+      {
+        "name": "Zara Ndlovu",
+        "role": "Decision Secretary",
+        "initial": "Sunday afternoon",
+        "priorities": "Records the cleanest rule-following conclusion with the fewest unresolved issues.",
+        "blind_spots": "May prefer administratively neat choices over nuanced dissent."
+      }
+    ]
+  },
+  {
+    "type": "evidence",
+    "item": {
+      "id": "E1",
+      "type": "FACT",
+      "claim": "The prompt says all 8 members are free Sunday afternoon.",
+      "source": "User-provided context",
+      "date": "2026-11-08",
+      "limitations": "This is supplied context and not independently verified.",
+      "url": null
+    }
+  },
+  {
+    "type": "evidence",
+    "item": {
+      "id": "E2",
+      "type": "FACT",
+      "claim": "The prompt says only 4 members are free Saturday morning.",
+      "source": "User-provided context",
+      "date": "2026-11-08",
+      "limitations": "This is supplied context and not independently verified.",
+      "url": null
+    }
+  },
+  {
+    "type": "evidence",
+    "item": {
+      "id": "E3",
+      "type": "FACT",
+      "claim": "The same free room is available both Saturday morning and Sunday afternoon.",
+      "source": "User-provided context",
+      "date": "2026-11-08",
+      "limitations": "This is supplied context and not independently verified.",
+      "url": null
+    }
+  },
+  {
+    "type": "evidence",
+    "item": {
+      "id": "E4",
+      "type": "FACT",
+      "claim": "The prompt prioritizes attendance over personal preference.",
+      "source": "User-provided context",
+      "date": "2026-11-08",
+      "limitations": "This is the decision rule supplied by the user, not an external standard.",
+      "url": null
+    }
+  },
+  {
+    "type": "evidence",
+    "item": {
+      "id": "E5",
+      "type": "FACT",
+      "claim": "No paid venue may be used.",
+      "source": "User-provided constraints",
+      "date": "2026-11-08",
+      "limitations": "Applies as a constraint on venue choice, but venue availability is already equal in the prompt.",
+      "url": null
+    }
+  },
+  {
+    "type": "evidence",
+    "item": {
+      "id": "E6",
+      "type": "UNKNOWN",
+      "claim": "No additional conflicts, accessibility issues, or hidden constraints were provided.",
+      "source": "Absence of further details in the user prompt",
+      "date": "2026-11-08",
+      "limitations": "Unknowns cannot be treated as evidence; they only indicate missing information.",
+      "url": null
+    }
+  },
+  {
+    "type": "turn",
+    "turn": {
+      "speaker": "Avery Chen",
+      "target": null,
+      "reply_to": null,
+      "phase": "Opening positions",
+      "kind": "position",
+      "text": "Attendance is decisive here. Sunday afternoon has all 8 members free versus 4 on Saturday morning, and the room is available both days. Given the stated priority, I vote Sunday afternoon.",
+      "evidence_ids": [
+        "E1",
+        "E2",
+        "E3",
+        "E4"
+      ]
+    }
+  },
+  {
+    "type": "turn",
+    "turn": {
+      "speaker": "Mira Patel",
+      "target": null,
+      "reply_to": null,
+      "phase": "Opening positions",
+      "kind": "position",
+      "text": "Sunday afternoon maximizes participation with 8 available members. Since attendance outranks personal preference, that is the best choice on the supplied evidence.",
+      "evidence_ids": [
+        "E1",
+        "E2",
+        "E4"
+      ]
+    }
+  },
+  {
+    "type": "turn",
+    "turn": {
+      "speaker": "Dante Okafor",
+      "target": null,
+      "reply_to": null,
+      "phase": "Opening positions",
+      "kind": "position",
+      "text": "I initially favor Saturday morning only as a minority-preservation check, but the prompt explicitly says prioritize attendance. With half the turnout, Saturday is weaker.",
+      "evidence_ids": [
+        "E1",
+        "E2",
+        "E4"
+      ]
+    }
+  },
+  {
+    "type": "turn",
+    "turn": {
+      "speaker": "Owen Brooks",
+      "target": "Avery Chen",
+      "reply_to": 0,
+      "phase": "Cross-examination",
+      "kind": "challenge",
+      "text": "Is there any evidence that Saturday\u2019s smaller turnout offers a compensating advantage? I don\u2019t see one. If not, the attendance rule seems to settle this cleanly.",
+      "evidence_ids": [
+        "E1",
+        "E2",
+        "E4",
+        "E6"
+      ]
+    }
+  },
+  {
+    "type": "turn",
+    "turn": {
+      "speaker": "Avery Chen",
+      "target": "Owen Brooks",
+      "reply_to": 3,
+      "phase": "Cross-examination",
+      "kind": "reply",
+      "text": "No compensating advantage is provided. Since the room and venue constraint are equal, the only supported distinction is attendance, which favors Sunday afternoon.",
+      "evidence_ids": [
+        "E1",
+        "E2",
+        "E3",
+        "E5"
+      ]
+    }
+  },
+  {
+    "type": "turn",
+    "turn": {
+      "speaker": "Priya Sato",
+      "target": "Dante Okafor",
+      "reply_to": 2,
+      "phase": "Minority challenge",
+      "kind": "challenge",
+      "text": "Your Saturday preference lacks an evidence-based benefit under the stated criteria. Can it survive when attendance is the primary rule and the room availability is equal?",
+      "evidence_ids": [
+        "E3",
+        "E4",
+        "E6"
+      ]
+    }
+  },
+  {
+    "type": "turn",
+    "turn": {
+      "speaker": "Dante Okafor",
+      "target": "Priya Sato",
+      "reply_to": 5,
+      "phase": "Minority challenge",
+      "kind": "reply",
+      "text": "No. With only 4 free on Saturday and 8 on Sunday, the minority case is not strong enough under the prompt\u2019s priority order. I withdraw Saturday as a serious competing recommendation.",
+      "evidence_ids": [
+        "E1",
+        "E2",
+        "E4"
+      ]
+    }
+  },
+  {
+    "type": "turn",
+    "turn": {
+      "speaker": "Noah Kim",
+      "target": null,
+      "reply_to": null,
+      "phase": "Cross-examination",
+      "kind": "position",
+      "text": "Constraint check passes: no paid venue is needed, and the same free room works both days. That removes non-attendance reasons to choose Saturday.",
+      "evidence_ids": [
+        "E3",
+        "E5"
+      ]
+    }
+  },
+  {
+    "type": "turn",
+    "turn": {
+      "speaker": "Lina Morales",
+      "target": null,
+      "reply_to": null,
+      "phase": "Cross-examination",
+      "kind": "position",
+      "text": "Sunday afternoon is also more inclusive because it lets all 8 attend. Choosing Saturday would exclude half the group without any stated offsetting benefit.",
+      "evidence_ids": [
+        "E1",
+        "E2",
+        "E4"
+      ]
+    }
+  },
+  {
+    "type": "turn",
+    "turn": {
+      "speaker": "Jonas Reed",
+      "target": null,
+      "reply_to": null,
+      "phase": "Cross-examination",
+      "kind": "position",
+      "text": "From a convenience lens, both options use the same room, so convenience does not break the tie. Attendance does, and Sunday is plainly easier for the group as a whole.",
+      "evidence_ids": [
+        "E3",
+        "E4"
+      ]
+    }
+  },
+  {
+    "type": "turn",
+    "turn": {
+      "speaker": "Elena Torres",
+      "target": "Owen Brooks",
+      "reply_to": 3,
+      "phase": "Red-team review",
+      "kind": "reply",
+      "text": "The failure case would be hidden constraints, but none are supplied. Under the given facts, there is no rational basis to prefer the lower-attendance slot.",
+      "evidence_ids": [
+        "E6",
+        "E1",
+        "E2"
+      ]
+    }
+  },
+  {
+    "type": "turn",
+    "turn": {
+      "speaker": "Zara Ndlovu",
+      "target": null,
+      "reply_to": null,
+      "phase": "Final vote",
+      "kind": "vote change",
+      "text": "Final vote confirmed: Sunday afternoon. The record is simple\u2014same room, no paid venue, all 8 available. That meets the attendance-first rule most cleanly.",
+      "evidence_ids": [
+        "E1",
+        "E2",
+        "E3",
+        "E4",
+        "E5"
+      ]
+    }
+  },
+  {
+    "type": "turn",
+    "turn": {
+      "speaker": "Avery Chen",
+      "target": null,
+      "reply_to": null,
+      "phase": "Final vote",
+      "kind": "verdict",
+      "text": "Final verdict: Sunday afternoon. Majority reasoning is unanimous by the end because the supplied evidence strongly favors the higher-attendance option under the stated criteria.",
+      "evidence_ids": [
+        "E1",
+        "E2",
+        "E3",
+        "E4",
+        "E5"
+      ]
+    }
+  },
+  {
+    "type": "report",
+    "report": {
+      "title": "Book Club Meeting Time Decision",
+      "revision": 1,
+      "options": [
+        "Saturday morning",
+        "Sunday afternoon"
+      ],
+      "verdict": "Sunday afternoon",
+      "summary": "Sunday afternoon is selected because all 8 members are free then, only 4 are free Saturday morning, and attendance is explicitly the top priority. The room is available both days, so there is no room-related reason to prefer Saturday, and the no-paid-venue constraint does not change the outcome.",
+      "confidence": "High, because the supplied evidence directly compares attendance and shows no offsetting constraint that would favor Saturday. Confidence is limited to the user-provided facts and not independently verified.",
+      "limitations": "All evidence comes from the user prompt and attachment, which were not independently verified. Hidden conflicts, accessibility needs, or preferences not mentioned could change the practical choice, but none were provided.",
+      "next_action": "Schedule the book club for Sunday afternoon and notify all 8 members.",
+      "rules": "Use the option that best satisfies the user\u2019s stated priority order. Here, attendance outranks personal preference, and both options satisfy the room and venue constraints.",
+      "external_comparison": "No external research was performed. General knowledge, if used, was not externally verified.",
+      "jurors": [
+        {
+          "name": "Avery Chen",
+          "role": "Chair",
+          "initial": "Sunday afternoon",
+          "final": "Sunday afternoon",
+          "reason": "Attendance is the decisive criterion and Sunday has full attendance with no venue disadvantage.",
+          "evidence_ids": [
+            "E1",
+            "E2",
+            "E3",
+            "E4"
+          ],
+          "priorities": "Maximize attendance first, then keep logistics simple and within constraints.",
+          "blind_spots": "May overvalue a clear majority and underweight minority scheduling burden."
+        },
+        {
+          "name": "Mira Patel",
+          "role": "Attendance Analyst",
+          "initial": "Sunday afternoon",
+          "final": "Sunday afternoon",
+          "reason": "Sunday afternoon has the highest availability: 8 versus 4.",
+          "evidence_ids": [
+            "E1",
+            "E2",
+            "E4"
+          ],
+          "priorities": "Chooses the option with the highest member availability.",
+          "blind_spots": "Can treat attendance as the only deciding factor and ignore edge convenience issues."
+        },
+        {
+          "name": "Jonas Reed",
+          "role": "Convenience Planner",
+          "initial": "Sunday afternoon",
+          "final": "Sunday afternoon",
+          "reason": "Convenience is equal on room access, so attendance decides the choice.",
+          "evidence_ids": [
+            "E3",
+            "E4"
+          ],
+          "priorities": "Prefers the least disruptive option that still satisfies the stated criteria.",
+          "blind_spots": "May underestimate how strongly attendance should dominate when explicitly prioritized."
+        },
+        {
+          "name": "Elena Torres",
+          "role": "Scheduling Pragmatist",
+          "initial": "Sunday afternoon",
+          "final": "Sunday afternoon",
+          "reason": "No supplied constraint favors Saturday, so the higher-attendance slot is best.",
+          "evidence_ids": [
+            "E6",
+            "E1",
+            "E2"
+          ],
+          "priorities": "Looks for the option that best fits shared constraints and avoids extra coordination.",
+          "blind_spots": "Can default to the most flexible-looking choice without testing tradeoffs carefully."
+        },
+        {
+          "name": "Dante Okafor",
+          "role": "Minority Advocate",
+          "initial": "Saturday morning",
+          "final": "Sunday afternoon",
+          "reason": "The Saturday case had no evidence-based advantage once attendance was applied as the primary rule.",
+          "evidence_ids": [
+            "E1",
+            "E2",
+            "E4"
+          ],
+          "priorities": "Checks whether a smaller group could still be acceptable if convenience were much better.",
+          "blind_spots": "May overprotect the minority option even when the prompt explicitly prioritizes attendance."
+        },
+        {
+          "name": "Priya Sato",
+          "role": "Risk Reviewer",
+          "initial": "Sunday afternoon",
+          "final": "Sunday afternoon",
+          "reason": "No risk-based reason appears to displace the higher-attendance option.",
+          "evidence_ids": [
+            "E3",
+            "E6"
+          ],
+          "priorities": "Flags constraint violations and any hidden scheduling risks.",
+          "blind_spots": "Can be conservative and reluctant to discard alternatives too quickly."
+        },
+        {
+          "name": "Noah Kim",
+          "role": "Constraint Auditor",
+          "initial": "Sunday afternoon",
+          "final": "Sunday afternoon",
+          "reason": "The no-paid-venue rule is satisfied and does not alter the attendance outcome.",
+          "evidence_ids": [
+            "E3",
+            "E5"
+          ],
+          "priorities": "Verifies the decision stays inside the stated constraints, including no paid venue.",
+          "blind_spots": "May focus narrowly on rule compliance and miss softer practical considerations."
+        },
+        {
+          "name": "Lina Morales",
+          "role": "Group Dynamics Lead",
+          "initial": "Sunday afternoon",
+          "final": "Sunday afternoon",
+          "reason": "Sunday includes everyone, which is the most inclusive outcome under the attendance-first rule.",
+          "evidence_ids": [
+            "E1",
+            "E2",
+            "E4"
+          ],
+          "priorities": "Keeps the meeting inclusive and minimizes avoidable exclusion.",
+          "blind_spots": "May overemphasize fairness language when the question asks for a practical choice."
+        },
+        {
+          "name": "Owen Brooks",
+          "role": "Skeptic",
+          "initial": "Saturday morning",
+          "final": "Sunday afternoon",
+          "reason": "No compensating evidence supported Saturday, so the attendance comparison settled it.",
+          "evidence_ids": [
+            "E1",
+            "E2",
+            "E4",
+            "E6"
+          ],
+          "priorities": "Challenges unsupported assumptions and tests whether the evidence actually settles the question.",
+          "blind_spots": "Can overcomplicate a straightforward attendance comparison."
+        },
+        {
+          "name": "Zara Ndlovu",
+          "role": "Decision Secretary",
+          "initial": "Sunday afternoon",
+          "final": "Sunday afternoon",
+          "reason": "The cleanest rule-following conclusion is Sunday afternoon with full attendance and equal room access.",
+          "evidence_ids": [
+            "E1",
+            "E2",
+            "E3",
+            "E4",
+            "E5"
+          ],
+          "priorities": "Records the cleanest rule-following conclusion with the fewest unresolved issues.",
+          "blind_spots": "May prefer administratively neat choices over nuanced dissent."
+        }
+      ],
+      "debate": [
+        "Attendance was the deciding factor because the prompt explicitly prioritizes it over personal preference.",
+        "Sunday afternoon offered full attendance: 8 members versus 4 on Saturday morning.",
+        "The room and no-paid-venue constraints were equal or nonbinding across both options.",
+        "A minority challenge asked whether Saturday had any compensating advantage; none was supported by the evidence.",
+        "The skeptic and red-team review found no hidden supplied constraint that would overturn the attendance-based conclusion."
+      ],
+      "vetoes": [
+        {
+          "type": "advisory",
+          "status": "resolved",
+          "juror": "Dante Okafor",
+          "option": "Saturday morning",
+          "rule": "Attendance-first priority",
+          "reason": "Saturday would exclude half the group without any stated offsetting benefit.",
+          "severity": "moderate",
+          "mitigation": "Re-evaluate only if new constraints or unavailable Sunday attendees are supplied.",
+          "evidence_ids": [
+            "E1",
+            "E2",
+            "E4"
+          ],
+          "chair_review": "Reviewed and rejected as a binding objection because the prompt explicitly prioritizes attendance.",
+          "verified": false
+        }
+      ],
+      "turns": [
+        {
+          "speaker": "Avery Chen",
+          "target": null,
+          "reply_to": null,
+          "phase": "Opening positions",
+          "kind": "position",
+          "text": "Attendance is decisive here. Sunday afternoon has all 8 members free versus 4 on Saturday morning, and the room is available both days. Given the stated priority, I vote Sunday afternoon.",
+          "evidence_ids": [
+            "E1",
+            "E2",
+            "E3",
+            "E4"
+          ]
+        },
+        {
+          "speaker": "Mira Patel",
+          "target": null,
+          "reply_to": null,
+          "phase": "Opening positions",
+          "kind": "position",
+          "text": "Sunday afternoon maximizes participation with 8 available members. Since attendance outranks personal preference, that is the best choice on the supplied evidence.",
+          "evidence_ids": [
+            "E1",
+            "E2",
+            "E4"
+          ]
+        },
+        {
+          "speaker": "Dante Okafor",
+          "target": null,
+          "reply_to": null,
+          "phase": "Opening positions",
+          "kind": "position",
+          "text": "I initially favor Saturday morning only as a minority-preservation check, but the prompt explicitly says prioritize attendance. With half the turnout, Saturday is weaker.",
+          "evidence_ids": [
+            "E1",
+            "E2",
+            "E4"
+          ]
+        },
+        {
+          "speaker": "Owen Brooks",
+          "target": "Avery Chen",
+          "reply_to": 0,
+          "phase": "Cross-examination",
+          "kind": "challenge",
+          "text": "Is there any evidence that Saturday\u2019s smaller turnout offers a compensating advantage? I don\u2019t see one. If not, the attendance rule seems to settle this cleanly.",
+          "evidence_ids": [
+            "E1",
+            "E2",
+            "E4",
+            "E6"
+          ]
+        },
+        {
+          "speaker": "Avery Chen",
+          "target": "Owen Brooks",
+          "reply_to": 3,
+          "phase": "Cross-examination",
+          "kind": "reply",
+          "text": "No compensating advantage is provided. Since the room and venue constraint are equal, the only supported distinction is attendance, which favors Sunday afternoon.",
+          "evidence_ids": [
+            "E1",
+            "E2",
+            "E3",
+            "E5"
+          ]
+        },
+        {
+          "speaker": "Priya Sato",
+          "target": "Dante Okafor",
+          "reply_to": 2,
+          "phase": "Minority challenge",
+          "kind": "challenge",
+          "text": "Your Saturday preference lacks an evidence-based benefit under the stated criteria. Can it survive when attendance is the primary rule and the room availability is equal?",
+          "evidence_ids": [
+            "E3",
+            "E4",
+            "E6"
+          ]
+        },
+        {
+          "speaker": "Dante Okafor",
+          "target": "Priya Sato",
+          "reply_to": 5,
+          "phase": "Minority challenge",
+          "kind": "reply",
+          "text": "No. With only 4 free on Saturday and 8 on Sunday, the minority case is not strong enough under the prompt\u2019s priority order. I withdraw Saturday as a serious competing recommendation.",
+          "evidence_ids": [
+            "E1",
+            "E2",
+            "E4"
+          ]
+        },
+        {
+          "speaker": "Noah Kim",
+          "target": null,
+          "reply_to": null,
+          "phase": "Cross-examination",
+          "kind": "position",
+          "text": "Constraint check passes: no paid venue is needed, and the same free room works both days. That removes non-attendance reasons to choose Saturday.",
+          "evidence_ids": [
+            "E3",
+            "E5"
+          ]
+        },
+        {
+          "speaker": "Lina Morales",
+          "target": null,
+          "reply_to": null,
+          "phase": "Cross-examination",
+          "kind": "position",
+          "text": "Sunday afternoon is also more inclusive because it lets all 8 attend. Choosing Saturday would exclude half the group without any stated offsetting benefit.",
+          "evidence_ids": [
+            "E1",
+            "E2",
+            "E4"
+          ]
+        },
+        {
+          "speaker": "Jonas Reed",
+          "target": null,
+          "reply_to": null,
+          "phase": "Cross-examination",
+          "kind": "position",
+          "text": "From a convenience lens, both options use the same room, so convenience does not break the tie. Attendance does, and Sunday is plainly easier for the group as a whole.",
+          "evidence_ids": [
+            "E3",
+            "E4"
+          ]
+        },
+        {
+          "speaker": "Elena Torres",
+          "target": "Owen Brooks",
+          "reply_to": 3,
+          "phase": "Red-team review",
+          "kind": "reply",
+          "text": "The failure case would be hidden constraints, but none are supplied. Under the given facts, there is no rational basis to prefer the lower-attendance slot.",
+          "evidence_ids": [
+            "E6",
+            "E1",
+            "E2"
+          ]
+        },
+        {
+          "speaker": "Zara Ndlovu",
+          "target": null,
+          "reply_to": null,
+          "phase": "Final vote",
+          "kind": "vote change",
+          "text": "Final vote confirmed: Sunday afternoon. The record is simple\u2014same room, no paid venue, all 8 available. That meets the attendance-first rule most cleanly.",
+          "evidence_ids": [
+            "E1",
+            "E2",
+            "E3",
+            "E4",
+            "E5"
+          ]
+        },
+        {
+          "speaker": "Avery Chen",
+          "target": null,
+          "reply_to": null,
+          "phase": "Final vote",
+          "kind": "verdict",
+          "text": "Final verdict: Sunday afternoon. Majority reasoning is unanimous by the end because the supplied evidence strongly favors the higher-attendance option under the stated criteria.",
+          "evidence_ids": [
+            "E1",
+            "E2",
+            "E3",
+            "E4",
+            "E5"
+          ]
+        }
+      ],
+      "evidence": [
+        {
+          "id": "E1",
+          "type": "FACT",
+          "claim": "The prompt says all 8 members are free Sunday afternoon.",
+          "source": "User-provided context",
+          "date": "2026-11-08",
+          "limitations": "This is supplied context and not independently verified.",
+          "url": null
+        },
+        {
+          "id": "E2",
+          "type": "FACT",
+          "claim": "The prompt says only 4 members are free Saturday morning.",
+          "source": "User-provided context",
+          "date": "2026-11-08",
+          "limitations": "This is supplied context and not independently verified.",
+          "url": null
+        },
+        {
+          "id": "E3",
+          "type": "FACT",
+          "claim": "The same free room is available both Saturday morning and Sunday afternoon.",
+          "source": "User-provided context",
+          "date": "2026-11-08",
+          "limitations": "This is supplied context and not independently verified.",
+          "url": null
+        },
+        {
+          "id": "E4",
+          "type": "FACT",
+          "claim": "The prompt prioritizes attendance over personal preference.",
+          "source": "User-provided context",
+          "date": "2026-11-08",
+          "limitations": "This is the decision rule supplied by the user, not an external standard.",
+          "url": null
+        },
+        {
+          "id": "E5",
+          "type": "FACT",
+          "claim": "No paid venue may be used.",
+          "source": "User-provided constraints",
+          "date": "2026-11-08",
+          "limitations": "Applies as a constraint on venue choice, but venue availability is already equal in the prompt.",
+          "url": null
+        },
+        {
+          "id": "E6",
+          "type": "UNKNOWN",
+          "claim": "No additional conflicts, accessibility issues, or hidden constraints were provided.",
+          "source": "Absence of further details in the user prompt",
+          "date": "2026-11-08",
+          "limitations": "Unknowns cannot be treated as evidence; they only indicate missing information.",
+          "url": null
+        }
+      ]
+    }
+  }
+]
